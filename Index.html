@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Magic Image Converter</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="container">
+    <h1>Magic Image Converter</h1>
+    <p>Convert JPG, PNG, PDF, WebP, BMP, GIF, ICO formats easily</p>
+
+    <div class="card">
+      <input type="file" id="fileInput" />
+      <select id="formatSelect">
+        <option value="jpg">JPG</option>
+        <option value="png">PNG</option>
+        <option value="webp">WEBP</option>
+        <option value="bmp">BMP</option>
+        <option value="gif">GIF</option>
+        <option value="ico">ICO</option>
+        <option value="pdf">PDF</option>
+      </select>
+      <button onclick="convertFile()">Convert Now</button>
+      <div id="output"></div>
+    </div>
+  </div>
+
+  <footer>&copy; 2025 Magic Image Converter</footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.14.305/pdf.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.7.1/jszip.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
